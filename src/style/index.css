@@ -1,0 +1,110 @@
+/* src/index.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #001529;
+  }
+  .searchButtonCusttom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+
+/* ScanDomainPage.css */
+
+.scan-domain-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.scan-button {
+  padding: 12px 24px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 8px;
+  color: black;
+}
+
+.loading-indicator {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container .videouse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* src/index.css */
+.ant-layout-sider-collapsed .ant-layout-sider-children {
+    width: 80px; /* Điều chỉnh chiều rộng của Sidebar khi bị thu gọn */
+  }
+  .sidebar-footer {
+    position: absolute;
+    bottom: 20px; /* Căn nút Logout ở phía dưới cùng */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Chiếm toàn bộ chiều rộng của Sidebar */
+ /* Lề trái và phải cho nút Logout */
+  }
