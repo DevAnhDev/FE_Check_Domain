@@ -1,4 +1,6 @@
-export const DOMAIN = "http://15.235.131.29:8080"
+export const DOMAIN = "http://51.79.208.204"
+
+// export const DOMAIN = "http://192.168.1.10:8080"
 
 //endpoint list domian
 export const createDomain = "/api/domains"
@@ -14,8 +16,6 @@ export const deletelTelegram = "/api/telegram"
 
 //endpoint scan domain
 export const scanDomain = "/api/domains/scan"
-
-
 //enpoint connect SSE
-export const connectSSE = "/sse"
+export const connectSSE = "/api/sse"
 

@@ -23,8 +23,8 @@ export const scanDomainAction = (endpoint)=>{
             await getAllItems(endpoint);
             let progress = 0;
             const interval = setInterval(() => {
-                progress += 10;
-                if (progress >= 110) {
+                progress += 1; 
+                if (progress >= 100) {
                   clearInterval(interval);
                   dispatch({ type: SCAN_DOMAIN_SUCCESS });
                 }
@@ -32,8 +32,8 @@ export const scanDomainAction = (endpoint)=>{
         } catch (error) {
             let progress = 0;
             const interval = setInterval(() => {
-                progress += 10;
-                if (progress >= 110) {
+                progress += 1;
+                if (progress >= 100) {
                   clearInterval(interval);
                   dispatch({type: SCAN_DOMAIN_FAILE})
                 }

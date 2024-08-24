@@ -37,7 +37,7 @@ const ScanDomainPage = () => {
         //   navigate("/domains/list_domains");
           return 100;
         }
-        return prevPercent + 10;
+        return prevPercent + 1;
       });
     }, 1000); // Tăng 10% mỗi giây
   };
